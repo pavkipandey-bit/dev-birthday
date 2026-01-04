@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1d2671, #c33764);
+      min-height: 100vh;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-weight: 400;
+      font-size: 1.5rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px 25px;
+      margin: 30px 0;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .card h3 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .card p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      opacity: 0.95;
+    }
+
+    .highlight {
+      color: #ffd369;
+      font-weight: 600;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 30px;
+      border-radius: 30px;
+      background: #ffd369;
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px 40px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    /* Balloons */
+    .balloon {
+      position: fixed;
+      bottom: -150px;
+      width: 60px;
+      height: 80px;
+      border-radius: 50% 50% 50% 50%;
+      animation: float 10s infinite ease-in;
+      opacity: 0.8;
+      z-index: 0;
+    }
+
+    .balloon::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 50px;
+      background: #fff;
+      left: 50%;
+      top: 80px;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-120vh); }
+    }
+
+    .b1 { left: 10%; background: #ff6f91; animation-duration: 9s; }
+    .b2 { left: 30%; background: #ffc75f; animation-duration: 11s; }
+    .b3 { left: 50%; background: #845ec2; animation-duration: 10s; }
+    .b4 { left: 70%; background: #4d96ff; animation-duration: 12s; }
+    .b5 { left: 90%; background: #00c9a7; animation-duration: 13s; }
+
+  </style>
+</head>
+<body>
+  <audio id="bg-music" autoplay loop>
+    <source src="tenu-sang-rakhna-jigra.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Autoplay fix for browsers
+    document.addEventListener('click', function () {
+      const music = document.getElementById('bg-music');
+      if (music.paused) music.play();
+    }, { once: true });
+  </script>
+
+  <!-- Balloons -->
+  <div class="balloon b1"></div>
+  <div class="balloon b2"></div>
+  <div class="balloon b3"></div>
+  <div class="balloon b4"></div>
+  <div class="balloon b5"></div>
+
+  <header>
+    <h1>Happy Birthday!</h1>
+    <h2>To the best brother in the world 🎉</h2>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h3>Dear <span class="highlight">Bhaiyu</span>,</h3>
+      <p>
+        I don’t say this often, but today I really want you to know — <span class="highlight">you are my biggest supporter</span>.
+        Through every phase of my life, you’ve been there in ways you might not even realize.
+      </p>
+      <p style="margin-top:15px;">
+        I may not express it enough, but the truth is simple and strong — <span class="highlight">I love you the most</span>.
+        Your presence makes everything feel safer, easier, and better.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Growing Up With You 💙</h3>
+      <p>
+        From childhood smiles to grown-up dreams, these moments tell our story —
+        a journey filled with laughter, strength, and unconditional love.
+      </p>
+
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:15px; margin-top:25px;">
+        <img src="/mnt/data/WhatsApp Image 2026-01-04 at 2.07.37 PM.jpeg" style="width:100%; border-radius:15px;" />
+        <img src="/mnt/data/WhatsApp Image 2026-01-04 at 2.07.38 PM.jpeg" style="width:100%; border-radius:15px;" />
+        <img src="/mnt/data/WhatsApp Image 2026-01-04 at 2.14.14 PM.jpeg" style="width:100%; border-radius:15px;" />
+        <img src="/mnt/data/Image1733.jpg" style="width:100%; border-radius:15px;" />
+        <img src="/mnt/data/IMAG1196.jpg" style="width:100%; border-radius:15px;" />
+        <img src="/mnt/data/22032008029.jpg" style="width:100%; border-radius:15px;" />
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>A Promise & A Wish ✨</h3>
+      <p>
+        No matter where life takes us, know that I’ll always be standing beside you —
+        cheering for you, believing in you, and loving you endlessly.
+      </p>
+      <a href="#" class="btn" onclick="alert('Happy Birthday Bhaiyu 🎂💙
+You mean the world to me.')">Click for a Surprise</a>
+    </div>
+  </div>
+
+  <footer>
+    Made with ❤️ just for Bhaiyu | Happy Birthday 🎂<br/>
+    <small>Song playing: <em>Tenu Sang Rakhna</em> (from <strong>Jigra</strong>) • Tap anywhere if music doesn’t start automatically</small>
+  </footer>
+
+</body>
+</html>
